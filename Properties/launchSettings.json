@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Simulator": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\omerz\\Desktop\\אוניברסיטה\\FG\\Simulator",
+      "sqlDebugging": false
+    }
+  }
+}

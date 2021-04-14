@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="Simulator.UserControl5"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Simulator"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Canvas Margin="10,0,303,0">
+       
+
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="38" Canvas.Top="20"
+			FontWeight="Bold" Content="altimeter"
+            FontSize="18" Foreground="#0066cc">
+        </Label>
+        <TextBox x:Name="altimeterTB"
+            Canvas.Left="144" Canvas.Top="28"
+            Width="100"
+            Background="White"
+            Text="{Binding VM_altimeter}" />
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="38" Canvas.Top="59"
+            FontWeight="Bold" Content="airspeed"
+            FontSize="18" Foreground="#0066cc"/>
+        <TextBox x:Name="airspeedTB"
+            Canvas.Left="144" Canvas.Top="67"
+            Width="100"
+            Background="White"
+            Text="{Binding VM_airspeed}" />
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="38" Canvas.Top="98"
+            FontWeight="Bold" Content="oriention"
+            FontSize="18" Foreground="#0066cc"/>
+        <TextBox x:Name="orientionTB"
+            Canvas.Left="144" Canvas.Top="106"
+            Width="100"
+            Background="White"
+            Text="{Binding VM_oriention}" />
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="38" Canvas.Top="138"
+            FontWeight="Bold" Content="yaw"
+            FontSize="18" Foreground="#0066cc"/>
+        <TextBox x:Name="yawTB"
+            Canvas.Left="144" Canvas.Top="146"
+            Width="100"
+            Background="White"
+            Text="{Binding VM_yaw}" />
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="38" Canvas.Top="178"
+            FontWeight="Bold" Content="roll"
+            FontSize="18" Foreground="#0066cc"/>
+        <TextBox x:Name="rollTB"
+            Canvas.Left="144" Canvas.Top="186"
+            Width="100"
+            Background="White"
+            Text="{Binding VM_roll}" />
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="38" Canvas.Top="223"
+            FontWeight="Bold" Content="pitch"
+            FontSize="18" Foreground="#0066cc"/>
+        <TextBox x:Name="pitchTB"
+            Canvas.Left="144" Canvas.Top="231"
+            Width="100"
+            Background="White"
+            Text="{Binding VM_pitch}" />
+    </Canvas>
+</UserControl>

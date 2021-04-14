@@ -1,0 +1,36 @@
+﻿<Window x:Class="Simulator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:control ="clr-namespace:Simulator"
+  Title="ExpenseIt" Height="192" Width="854">
+    <Canvas Margin="0,0,0,397">
+
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="30" Canvas.Top="16"
+			FontWeight="Bold"
+            Content="Call the csv file 'reg_flight'. Call the xml file 'playback_small'. Put them both in that path:"
+            FontSize="18" Foreground="#0066cc">
+        </Label>
+        <Label 
+            FontFamily="Trebuchet MS"
+            Canvas.Left="30" Canvas.Top="34"
+			FontWeight="Bold"
+            Content="{Binding path}"
+            FontSize="18" Foreground="#0066cc">
+        </Label>
+        <Button 
+            Canvas.Top="50"
+            x:Name="done" Background="yellow"
+            Width="100" Height="50" HorizontalAlignment="Left" 
+            Content="done" 
+            FontFamily="Trebuchet MS"
+            Click="doneClicked" Margin="120,20,0,20"
+			
+			/>
+    </Canvas>
+
+</Window>

@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="Simulator.Graph"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Simulator" 
+             xmlns:oxy="http://oxyplot.org/wpf" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" d:DesignWidth="800" Height="562">
+    <Grid Margin="83,0,0,0">
+        <Grid Background="LightGray" Margin="10,0,0,0" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.065"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--<ListBox ItemsSource="{Binding Attributes}" Name="listBox" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding SelectedAttributesCommand, Mode=TwoWay}"  CommandParameter="{Binding ElementName=listBox, Path=SelectedItems}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ListBox>-->
+
+
+            <ListBox x:Name="myListBox" ItemsSource="{Binding Attributes}" SelectedIndex="{Binding SelectedAttributeIndex}" Margin="0,0,353,136" Grid.ColumnSpan="2">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding SelectedAttributesCommand}"  CommandParameter="{Binding ElementName=myListBox, Path=SelectedItem}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ListBox >
+
+
+
+
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="85*"></RowDefinition>
+                    <RowDefinition Height="196*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+
+                <oxy:Plot Title="{Binding Title}" Margin="5,0,5,31" >
+                    <oxy:Plot.Series>
+                        <oxy:LineSeries ItemsSource="{Binding Points}"  MarkerFill="Yellow"   MarkerType="Circle"  Color="Transparent" />
+                    </oxy:Plot.Series>
+                </oxy:Plot>
+
+                <oxy:Plot Title="{Binding CTitle}" Margin="172,0,0,31" Grid.ColumnSpan="2">
+                    <oxy:Plot.Series>
+                        <oxy:LineSeries ItemsSource="{Binding CPoints}"  MarkerFill="Green"   MarkerType="Circle"  Color="Transparent" />
+                    </oxy:Plot.Series>
+                </oxy:Plot>
+
+                <oxy:Plot Title="{Binding RTitle}" Grid.ColumnSpan="2" Margin="0,139,0,137" Grid.RowSpan="2">
+                    <oxy:Plot.Series>
+                        <oxy:LineSeries ItemsSource="{Binding RPoints}"  MarkerFill="SteelBlue" MarkerType="Circle"  Color="Transparent" />
+                        <oxy:LineSeries ItemsSource="{Binding Line}" LineStyle="None"  MarkerType="Circle" MarkerSize="2" MarkerFill="Black"/>
+                    </oxy:Plot.Series>
+                </oxy:Plot>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+</UserControl>

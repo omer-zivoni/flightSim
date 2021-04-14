@@ -44,9 +44,10 @@ MainWindow: החלון הראשון שנפתח, אומר למשתמש איפה �
 
 ![section 4](https://github.com/omer-zivoni/flightSim/blob/main/screen%20shots/section%204.png)
 כעת עליו ללחוץ play בנגן.
+
 5. 
 
-קישור לקבצי תיעוד נוספים בתוך הgit המכילים תיעוד מפורט של המחלקות הראשיות בפרויקט, זרמית מידע, תרשמי UML של המחלקות הראשיות. דגש על MVVM
 ![section 5](https://github.com/omer-zivoni/flightSim/blob/main/screen%20shots/section%205.png)
+
 6.
 https://github.com/omer-zivoni/flightSim/blob/main/guide%20video.mp4

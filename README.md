@@ -32,7 +32,8 @@ MainWindow: החלון הראשון שנפתח, אומר למשתמש איפה �
 --generic=socket,in,10,127.0.0.1,5400,tcp,playback_small
 --fdm=null
 
-קישור לתמונה 3
+![section 3](https://github.com/omer-zivoni/flightSim/blob/main/screen%20shots/section%203.png)
+
 כמו כן צריך להכניס את הקובץ CSV והקובץ XML בשמות ובנתיב שמופיע בחלון שעולה 
 לאחר הרצת התוכנית.
 
@@ -41,11 +42,11 @@ MainWindow: החלון הראשון שנפתח, אומר למשתמש איפה �
 כשהמשתמש ירצה להשתמש בתוכנה, הוא יצטרך קודם כל להיכנס לFlight Gear וללחוץ על Fly.
 כעת הוא יכול להריץ את האפליקציה שלנו. האפליקציה שלנו תגיד לו היכן לשים את קובץ הCSV של נתוני הטיסה ואיך לקרוא לו, ואותו הדבר גם לגבי קובץ הXML. לאחר מכן הוא ילחץ Done ויופיע לו החלון הבא:
 
-קישור לתמונה 4
+![section 4](https://github.com/omer-zivoni/flightSim/blob/main/screen%20shots/section%204.png)
 כעת עליו ללחוץ play בנגן.
 5. 
 
 קישור לקבצי תיעוד נוספים בתוך הgit המכילים תיעוד מפורט של המחלקות הראשיות בפרויקט, זרמית מידע, תרשמי UML של המחלקות הראשיות. דגש על MVVM
-קישור לתמונה 5
+![section 5](https://github.com/omer-zivoni/flightSim/blob/main/screen%20shots/section%205.png)
 6.
-קישור לסרטון עד 6 דקות של הדגמת סיפורי המשתמש
+https://github.com/omer-zivoni/flightSim/blob/main/guide%20video.mp4

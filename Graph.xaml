@@ -22,16 +22,8 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <!--<ListBox ItemsSource="{Binding Attributes}" Name="listBox" >
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="SelectionChanged">
-                        <i:InvokeCommandAction Command="{Binding SelectedAttributesCommand, Mode=TwoWay}"  CommandParameter="{Binding ElementName=listBox, Path=SelectedItems}"/>
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
-            </ListBox>-->
 
-
-            <ListBox x:Name="myListBox" ItemsSource="{Binding Attributes}" SelectedIndex="{Binding SelectedAttributeIndex}" Margin="0,0,353,136" Grid.ColumnSpan="2">
+            <ListBox x:Name="myListBox" ItemsSource="{Binding Attributes}" SelectedIndex="{Binding SelectedAttributeIndex}" Margin="0,0,353,165" Grid.ColumnSpan="2">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="SelectionChanged">
                         <i:InvokeCommandAction Command="{Binding SelectedAttributesCommand}"  CommandParameter="{Binding ElementName=myListBox, Path=SelectedItem}"/>

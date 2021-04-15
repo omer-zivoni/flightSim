@@ -7,12 +7,13 @@
     xmlns:control ="clr-namespace:Simulator"
   Title="ExpenseIt" Height="192" Width="854">
     <Canvas Margin="0,0,0,397">
-
+<!-- In the next label the name of the files is write with double _ , but it's just fot seeing
+            the underline better in the window. The names suppose to be 'reg_flight' and 'playback_small'-->
         <Label 
             FontFamily="Trebuchet MS"
             Canvas.Left="30" Canvas.Top="16"
 			FontWeight="Bold"
-            Content="Call the csv file 'reg_flight'. Call the xml file 'playback_small'. Put them both in that path:"
+            Content="Call the csv file 'reg__flight'. Call the xml file 'playback__small'. Put them both in that path:"
             FontSize="18" Foreground="#0066cc">
         </Label>
         <Label 

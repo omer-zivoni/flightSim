@@ -101,6 +101,10 @@ namespace Simulator
 
             for (int i = 0; i < Program.currentRowIndex; i++)
             {
+                if (i >= this.dataPoints.Count())
+                    break;
+                if (i >= this.corelativePoints.Count())
+                    break;
                 regresionPoints.Add(new DataPoint(this.dataPoints[i].Y, this.corelativePoints[i].Y));
             }
 
